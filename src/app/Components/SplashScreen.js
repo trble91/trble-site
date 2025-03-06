@@ -14,6 +14,23 @@ const SplashScreen = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  /*
+
+    import { Canvas } from '@react-three/fiber';
+    
+    function HomePage() {
+      return (
+        <Canvas>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[0, 0, 5]} />
+          <Model />
+        </Canvas>
+      );
+    }
+    
+    export default HomePage;
+*/
+
   return (
     <AnimatePresence>0
       {isVisible && (
