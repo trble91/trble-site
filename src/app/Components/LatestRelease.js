@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function LatestRelease() {
   return (
     <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4">Latest Release</h2>
       <div className="flex items-center">
-        <img src="/path/to/album-cover.jpg" alt="Album Cover" className="w-32 h-32 mr-4 rounded-lg" />
+        <Image src="/path/to/album-cover.jpg" alt="Album Cover" className="w-32 h-32 mr-4 rounded-lg" />
         <div>
           <h3 className="text-xl font-semibold">Album Title</h3>
           <p className="text-gray-400">Release Date: March 11, 2025</p>
