@@ -8,7 +8,6 @@ export default function page() {
   return (
     <div>
       <SplashScreen />
-      <h1>Welcome to the Store</h1>
       <Navbar />
     </div>
   );

@@ -133,7 +133,7 @@ export default function Music() {
     <>
       <Navbar />
       <p className="text-center text-sm text-slate-700 font-thin mt-7 -mb-8">
-        Click text to listen to song
+        Click text to listen
       </p>
       <div className="flex flex-col place-items-center min-h-screen py-12">
         {AlbumCards.map((post, index) => (
