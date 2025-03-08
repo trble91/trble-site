@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/Link';
 
 export default function LatestRelease() {
   return (
@@ -11,9 +12,9 @@ export default function LatestRelease() {
           <h3 className="text-xl font-semibold">Album Title</h3>
           <p className="text-gray-400">Release Date: March 11, 2025</p>
           <p className="mt-2">Description of the latest release. This album features...</p>
-          <a href="/path/to/album" className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+          <Link href="https://unitedmasters.com/m/thank-you-66" className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
             Listen Now
-          </a>
+          </Link>
         </div>
       </div>
     </div>
