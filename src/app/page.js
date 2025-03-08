@@ -1,17 +1,15 @@
-import React from 'react';
-import MusicTracks from '.Components/MusicTracks';
-import Products from '.Components/Products';
-import StripeWrapper from '.Components/Checkout';
+'use client';
 
-export default function app() {
+import React from "react";
+import Navbar from "./Components/Navbar";
+import SplashScreen from "./Components/SplashScreen";
+
+export default function page() {
   return (
     <div>
+      <SplashScreen />
       <h1>Welcome to the Store</h1>
-      <MusicTracks />
-      <Products />
-      <StripeWrapper />
+      <Navbar />
     </div>
   );
-};
-
-
+}

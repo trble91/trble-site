@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -10,29 +10,12 @@ const SplashScreen = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 3000); //Timer for splash screen
+    }, 3200); // Timer for splash screen
     return () => clearTimeout(timer);
   }, []);
 
-  /*
-
-    import { Canvas } from '@react-three/fiber';
-    
-    function HomePage() {
-      return (
-        <Canvas>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[0, 0, 5]} />
-          <Model />
-        </Canvas>
-      );
-    }
-    
-    export default HomePage;
-*/
-
   return (
-    <AnimatePresence>0
+    <AnimatePresence>
       {isVisible && (
         <motion.div
           initial={{ opacity: 1, scale: 1 }}
@@ -42,12 +25,12 @@ const SplashScreen = () => {
           style={styles.splashScreen}
         >
           <motion.div
-            initial={{ x: 3, y: -50, opacity: 0 }}
+            initial={{ x: 0, y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
-            style={styles}
+            style={styles.logoContainer}
           >
-            <span> {<Logo />}</span>
+            <Logo />
           </motion.div>
         </motion.div>
       )}
@@ -55,12 +38,12 @@ const SplashScreen = () => {
   );
 };
 
-//Background css details 
+// Background CSS details
 const styles = {
   splashScreen: {
     position: 'fixed',
-    top: 0, 
-    left: 0, 
+    top: 0,
+    left: 0,
     width: '100vw',
     height: '100vh',
     backgroundColor: "#FFFFFF",
@@ -68,6 +51,11 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 9999,
+  },
+  logoContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   }
 };
 

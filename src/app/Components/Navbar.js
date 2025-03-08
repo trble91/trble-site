@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function Navbar() {
   const links = [
     { href: "/", label: "Home" },
-    { href: "/Photography", label: "Photos" },
-    { href: "/Blog", label: "Blog" },
-    { href: "/Contact", label: "Contact" },
+    { href: "/Music", label: "Music" },
+    { href: "/Videos", label: "Videos" },
+    { href: "/Tour", label: "Tour" },
     { href: "/About", label: "About" },
-    { href: "/Services", label: "Services" },
+    { href: "/Store", label: "Shop" },
   ];
 
   return (

@@ -1,43 +1,34 @@
 "use client";
 
-import Image from "next/image";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
-import { useLoader } from '@react-three/fiber';
-import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
-
+import { useLoader } from "@react-three/fiber";
+import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 
 export default function Logo() {
-
-  const imageStyle = {
-    filter: 'invert(100%)'
-  };
-
-  /*
-    function Model() {
-      const geometry = useLoader(STLLoader, '/path/to/your/model.stl');
-      return (
-        <mesh geometry={geometry}>
-          <meshStandardMaterial color="gray" />
-        </mesh>
-      );
-    }
-  */
+  function Model() {
+    const geometry = useLoader(STLLoader, "/logo1.stl");
+    return (
+      <mesh geometry={geometry}>
+        <meshStandardMaterial color="gray" />
+      </mesh>
+    );
+  }
 
   return (
-    <div className="-mt-42 color-inverse">
+    <div className="-mt-42">
       <motion.div
-        initial={{ x: -500, opacity: 0, scale: 0.7 }}
-        animate={{ x: 5, y: -25, opacity: 1, scale: 1.2 }}
-        transition={{ duration: 0.5 }}
+        initial={{ x: -500, opacity: 0.5, scale: 1 }}
+        animate={{ x: 5, y: -25, opacity: 1, scale: 1.2, rotateY: 1080 }}
+        transition={{ duration: 0.8 }}
         className="items-center"
       >
-        <Image
-          src="/public/logo1.stl"
-          width={200}
-          height={100}
-          alt="text logo"
-          style={imageStyle}
-        />
+        <Canvas style={{ width: 200, height: 300 }}>
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <Model />
+        </Canvas>
       </motion.div>
     </div>
   );
