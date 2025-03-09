@@ -23,15 +23,15 @@ export default function Music() {
       ],
       released: "Released: 20 Oct 2017",
     },
-    /*{
+    {
       title: "Songs About Love",
       project: "EP",
       images: [
         { src: "/assets/sal.jpg", href: "", height: "300px", width: "300px" },
       ],
-      released: "Released: 01 Aug 2019",
+      released: "Released: 20 Mar 2018",
     },
-    {
+    /*{
       title: "Rewind",
       project: "Single",
       images: [{ src: "/assets/rw.jpg", href: "", height: "300px", width: "300px" }],
@@ -56,14 +56,14 @@ export default function Music() {
       images: [
         { src: "/assets/gt.jpg", href: "https://unitedmasters.com/m/gotina", height: "300px", width: "300px" },
       ],
-      released: "Released: 12 Feb 2019",
+      released: "Released: 22 Jul 2020",
     },
     {
       title: "Onto Something",
       project: "Single",
       images: [
         {
-          src: "/assets/ts.jpg",
+          src: "/assets/.jpg",
           href: "https://unitedmasters.com/m/ontosomething",
           height: "300px",
           width: "300px",
