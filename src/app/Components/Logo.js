@@ -9,7 +9,7 @@ import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 
 export default function Logo() {
   function Model() {
-    const geometry = useLoader(STLLoader, "/logo1.stl");
+    const geometry = useLoader(STLLoader, "/logo2.png");
     return (
       <mesh geometry={geometry}>
         <meshStandardMaterial color="gray" />
