@@ -5,8 +5,10 @@ import Navbar from '../Components/Navbar'
 export default function Tour() {
   return (
     <>
-    <div>Tour</div>
     <Navbar />
+    <p className="text-center text-sm text-slate-700 font-thin mt-7 -mb-8">
+        No Tour Information at This Time
+      </p>
     </>
   )
 }

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import AlbumCard from "../Components/AlbumCard.js";
-//import LatestRelease from "../Components/LatestRelease.js";
 import Modal from "../Components/Modal.js";
 import Navbar from "../Components/Navbar.js";
 
@@ -31,12 +31,6 @@ export default function Music() {
       ],
       released: "Released: 20 Mar 2018",
     },
-    /*{
-      title: "Rewind",
-      project: "Single",
-      images: [{ src: "/assets/rw.jpg", href: "", height: "300px", width: "300px" }],
-      released: "Released: 07 Aug 2019",
-    },*/
     {
       title: "Social Studies",
       project: "Mixtape",
@@ -132,10 +126,12 @@ export default function Music() {
   return (
     <>
       <Navbar />
-      <p className="text-center text-sm text-slate-700 font-thin mt-7 -mb-8">
-        Click text to listen
-      </p>
-      <div className="flex flex-col place-items-center min-h-screen py-12">
+      <motion.div
+        className="flex flex-col place-items-center min-h-screen py-12 overflow-y-scroll"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {AlbumCards.map((post, index) => (
           <AlbumCard
             key={index}
@@ -144,7 +140,7 @@ export default function Music() {
             onClick={() => openModal(post)}
           />
         ))}
-      </div>
+      </motion.div>
       {selectedPost && (
         <Modal
           isOpen={isModalOpen}
