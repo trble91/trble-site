@@ -1,14 +1,12 @@
-'use client';
+"use client";
 
 import React from "react";
-import Navbar from "./Components/Navbar";
-import SplashScreen from "./Components/SplashScreen";
+import Home from "./Components/Home";
 
 export default function page() {
   return (
     <div>
-      <SplashScreen />
-      <Navbar />
+      <Home />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/Music", label: "Music" },
     { href: "/Videos", label: "Videos" },
-    { href: "/Tour", label: "Tour" },
+    { href: "/Tour", label: "Shows" },
     { href: "/About", label: "About" },
     { href: "/Store", label: "Shop" },
   ];
