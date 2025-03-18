@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const links = [
-    { href: "/", label: "Home" },
+    { href: "/Home", label: "Home" },
     { href: "/Music", label: "Music" },
     { href: "/Videos", label: "Videos" },
     { href: "/Tour", label: "Shows" },

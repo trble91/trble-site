@@ -1,9 +1,10 @@
 "use client";
+'use strict';
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import AlbumCard from "../Components/AlbumCard.js";
-import Modal from "../Components/Modal.js";
+// import { motion } from "framer-motion";
+// import AlbumCard from "../Components/AlbumCard.js";
+// import Modal from "../Components/Modal.js";
 import Navbar from "../Components/Navbar.js";
 
 export default function Music() {
@@ -48,7 +49,12 @@ export default function Music() {
       title: "Go Tina",
       project: "Single",
       images: [
-        { src: "/assets/gt.jpg", href: "https://unitedmasters.com/m/gotina", height: "300px", width: "300px" },
+        {
+          src: "/assets/gt.jpg",
+          href: "https://unitedmasters.com/m/gotina",
+          height: "300px",
+          width: "300px",
+        },
       ],
       released: "Released: 22 Jul 2020",
     },
@@ -57,7 +63,7 @@ export default function Music() {
       project: "Single",
       images: [
         {
-          src: "/assets/.jpg",
+          src: "/assets/gt.jpg",
           href: "https://unitedmasters.com/m/ontosomething",
           height: "300px",
           width: "300px",
@@ -69,7 +75,12 @@ export default function Music() {
       title: "The Side",
       project: "Single",
       images: [
-        { src: "/assets/ts.jpg", href: "https://unitedmasters.com/m/thtside", height: "300px", width: "300px" },
+        {
+          src: "/assets/ts.jpg",
+          href: "https://unitedmasters.com/m/thtside",
+          height: "300px",
+          width: "300px",
+        },
       ],
       released: "Released: 18 Aug 2022",
     },
@@ -123,34 +134,42 @@ export default function Music() {
     setIsModalOpen(false);
   };
 
+  /*  <motion.div
+   className="flex flex-col place-items-center min-h-screen py-12 overflow-y-scroll"
+   transition={{ duration: 0.5 }}
+ >
+   {AlbumCards.map((post, index) => (
+     <AlbumCard
+       key={index}
+       title={post.title}
+       images={post.images}
+       onClick={() => openModal(post)}
+     />
+   ))}
+ </motion.div>
+ {selectedPost && (
+   <Modal
+     isOpen={isModalOpen}
+     onClose={closeModal}
+     title={selectedPost.title}
+     images={selectedPost.images}
+     project={selectedPost.project}
+     released={selectedPost.released}
+     initial={{ opacity: 0 }}
+     animate={{ opacity: 1 }}
+   )}
+   /> */
+
   return (
     <>
       <Navbar />
-      <motion.div
-        className="flex flex-col place-items-center min-h-screen py-12 overflow-y-scroll"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        {AlbumCards.map((post, index) => (
-          <AlbumCard
-            key={index}
-            title={post.title}
-            images={post.images}
-            onClick={() => openModal(post)}
-          />
-        ))}
-      </motion.div>
-      {selectedPost && (
-        <Modal
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          title={selectedPost.title}
-          images={selectedPost.images}
-          project={selectedPost.project}
-          released={selectedPost.released}
-        />
-      )}
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+      <div class="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
+        data-elfsight-app-lazy
+      ></div>
     </>
   );
 }
