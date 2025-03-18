@@ -1,4 +1,5 @@
 "use client";
+"use strict";
 
 import React from "react";
 import { Canvas } from "@react-three/fiber";
@@ -19,7 +20,7 @@ export default function Logo() {
   return (
     <div className="-mt-42">
       <motion.div
-        initial={{ x: -500, opacity: 0.5, scale: 1 }}
+        initial={{ x: -500, opacity: 1, scale: 1 }}
         animate={{ x: 5, y: -25, opacity: 1, scale: 1.2, rotateY: 1080 }}
         transition={{ duration: 0.8 }}
         className="items-center"

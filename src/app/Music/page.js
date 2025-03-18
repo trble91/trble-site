@@ -6,6 +6,7 @@ import React, { useState } from "react";
 // import AlbumCard from "../Components/AlbumCard.js";
 // import Modal from "../Components/Modal.js";
 import Navbar from "../Components/Navbar.js";
+// import Footer from "../Components/Footer.js";
 
 export default function Music() {
   const [selectedPost, setSelectedPost] = useState(null);
@@ -170,6 +171,7 @@ export default function Music() {
       <div class="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
         data-elfsight-app-lazy
       ></div>
+      {/* <Footer /> */}
     </>
   );
 }

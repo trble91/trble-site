@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const Menu = dynamic(() => import("./Menu"), { ssr: false });
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative flex justify-end items-center p-6 bg-white-800 text-white">
+      <nav className="relative flex justify-end items-center p-6 bg-white text-black">
         <button
           className="block xl:hidden focus:outline-none"
           onClick={toggleMenu}
@@ -41,20 +44,10 @@ export default function Navbar() {
             ></path>
           </svg>
         </button>
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } absolute top-16 right-0 w-full bg-white text-black xl:static xl:flex xl:w-auto`}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="block px-4 py-2 text-sm hover:bg-white text-black xl:inline-block xl:mt-0 xl:ml-4"     >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+
+        {isOpen && (
+          <Menu links={links} />
+        )}
       </nav>
     </>
   );
