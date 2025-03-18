@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Navbar />
       <motion.div 
-        className="flex relative p-8 flex-row justify-center mt-4 mb-4 snap-center xl:-pt-20 xl:pb-20"
+        className="flex relative flex-row justify-center mt-4 mb-4 snap-center -z-80 xl:-pt-20 xl:pb-20"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

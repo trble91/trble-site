@@ -164,14 +164,16 @@ export default function Music() {
   return (
     <>
       <Navbar />
+      <div className="flex relative flex-row justify-center mt-4 mb-4 snap-center -z-80 xl:-pt-20 xl:pb-20">
       <script
         src="https://static.elfsight.com/platform/platform.js"
         async
       ></script>
-      <div class="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
+      <div className="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
         data-elfsight-app-lazy
       ></div>
       {/* <Footer /> */}
+      </div>
     </>
   );
 }

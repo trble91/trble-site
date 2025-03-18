@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative flex justify-end items-center p-6 bg-white text-black">
+      <nav className="relative flex justify-end items-center p-6 bg-gray-150 text-black">
         <button
           className="block xl:hidden focus:outline-none"
           onClick={toggleMenu}

@@ -12,7 +12,7 @@ export default function Video() {
   return (
     <>
       <Navbar />
-      <div className="flex relative flex-row justify-center mt-4 mb-4 snap-center xl:-pt-20 xl:pb-20">
+      <div className="flex relative flex-row justify-center mt-4 mb-4 snap-center -z-80 xl:-pt-20 xl:pb-20">
         <div className="flex flex-col justify-center items-center">
           <motion.div
             style={{
