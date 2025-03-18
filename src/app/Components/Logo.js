@@ -2,17 +2,17 @@
 "use strict";
 
 import React from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { motion } from "framer-motion";
-import { useLoader } from "@react-three/fiber";
-import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
+import { TextureLoader } from "three";
 
 export default function Logo() {
   function Model() {
-    const geometry = useLoader(STLLoader, "/logo2.png");
+    const texture = useLoader(TextureLoader, "/logo2.png");
     return (
-      <mesh geometry={geometry}>
-        <meshStandardMaterial color="gray" />
+      <mesh>
+        <planeBufferGeometry attach="geometry" args={[1, 1]} />
+        <meshStandardMaterial attach="material" map={texture} />
       </mesh>
     );
   }
