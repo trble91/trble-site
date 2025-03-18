@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <nav className="relative flex justify-end items-center p-6 bg-gray-150 text-black">
         <button
-          className="block xl:hidden focus:outline-none"
+          className="block focus:outline-none"
           onClick={toggleMenu}
         >
           <svg
