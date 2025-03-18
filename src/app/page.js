@@ -1,18 +1,19 @@
 "use client";
+"use strict";
 
+import "../app/globals.css";
 import React from "react";
-import Home from './Home/page.js';
-import Music from "./Music/page.js";
-import Video from "./Videos/page.js";
-import About from "./About/page.js";
+import Homepage from "./Homepage/page.js";
+import Navbar from "./Components/Navbar.js";
 
-export default function Page() {
+export default function Home() {
   return (
-    <div>
-      <Home />
-      <Music />
-      <Video />
-      <About />
-    </div>
+    <>
+      <React.StrictMode>
+        <main className="min-h-screen flex-col items-center">
+          <Homepage />
+        </main>
+      </React.StrictMode>
+    </>
   );
 }
