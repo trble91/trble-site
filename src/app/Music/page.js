@@ -169,7 +169,7 @@ export default function Music() {
         src="https://static.elfsight.com/platform/platform.js"
         async
       ></script>
-      <div className="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
+      <div class="elfsight-app-46e261e8-a197-441e-b442-424d4a26de7c"
         data-elfsight-app-lazy
       ></div>
       {/* <Footer /> */}
