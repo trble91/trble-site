@@ -2,21 +2,9 @@
 "use strict";
 
 import React from "react";
-import { Canvas, useLoader } from "@react-three/fiber";
 import { motion } from "framer-motion";
-import { TextureLoader } from "three";
 
 export default function Logo() {
-  function Model() {
-    const texture = useLoader(TextureLoader, "/logo2.png");
-    return (
-      <mesh>
-        <planeBufferGeometry attach="geometry" args={[1, 1]} />
-        <meshStandardMaterial attach="material" map={texture} />
-      </mesh>
-    );
-  }
-
   return (
     <div className="-mt-42">
       <motion.div
@@ -25,11 +13,14 @@ export default function Logo() {
         transition={{ duration: 0.8 }}
         className="items-center"
       >
-        <Canvas style={{ width: 200, height: 300 }}>
-          <ambientLight />
-          <pointLight position={[10, 10, 10]} />
-          <Model />
-        </Canvas>
+        <motion.img
+          src="/logo2.png"
+          alt="Logo"
+          style={{ width: 300, height: 300 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        />
       </motion.div>
     </div>
   );
