@@ -1,11 +1,10 @@
 "use client";
 
-import react from "react";
 import Link from "next/link";
 
 export default function Menu({ links }) {
   return (
-    <div className="absolute top-16 right-0 w-full bg-stone-200 text-black sm:z-50 xl:z-50">
+    <div className="absolute top-16 left-0 shadow-lg z-50  bg-stone-200 text-black">
       {links.map((link) => (
         <Link
           key={link.href}

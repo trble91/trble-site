@@ -27,7 +27,7 @@ const SplashScreen = () => {
           style={styles.splashScreen}
         >
           <motion.div
-            initial={{ x: 0, y: -50, opacity: 0 }}
+            initial={{ x: 0, y: -150, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             style={styles.logoContainer}

@@ -164,7 +164,7 @@ export default function Music() {
   return (
     <>
       <Navbar />
-      <div className="flex relative flex-row justify-center mt-4 mb-4 snap-center xl:z-40 sm:z-30 xl:-pt-20 xl:pb-20">
+      <div className="flex sticky flex-row justify-center z-0 mt-4 mb-4 snap-center xl:-pt-20 xl:pb-20">
         <script
           src="https://static.elfsight.com/platform/platform.js"
           async

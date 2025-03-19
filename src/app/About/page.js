@@ -20,14 +20,14 @@ From electrifying performances to introspective anthems, TRBLE continues to push
       <Navbar />
       <div>
       <motion.div 
-        className="flex flex-col items-center space-y-6 min-h-screen py-12 snap-center sm:p-20 xl:-pt-20 xl:pb-20"
+        className="flex flex-col items-center mb:8  min-h-screen py-12 snap-center sm:p-20 xl:-pt-20 xl:pb-20"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="flex flex-col justify-center items-center relative w-full h-64">
+        <div className="flex flex-col justify-center items-center relative w-full ">
           <motion.div
-            className="flex absolute flex-row text-start text-slate-800 sm:text-center text-lg top-56 xl:flex-row max-w-[700px] items-center snap-center"
+            className="flex sticky flex-row text-start text-slate-800 top-0.5 sm:text-center text-lg xl:flex-row max-w-[700px] items-center snap-center"
             transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
           >
             <p className="flex relative ml-1 text-left font-thin text-m mb-8">
