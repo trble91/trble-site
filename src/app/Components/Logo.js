@@ -16,7 +16,7 @@ export default function Logo() {
         <motion.img
           src="/logo2.png"
           alt="Logo"
-          style={{ width: 300, height: 300 }}
+          style={{ width: 100, height: 100 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

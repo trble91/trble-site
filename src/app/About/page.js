@@ -3,16 +3,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 export default function About() {
 
-  const text = " TRBLE - a creator of the arts, has a unique sound blended with hip hop roots. TRBLE offers a majestic feel every time you hear a note. He usually starts off the conversation by explaining the acronym of his name, To Really Believe Love Exists - much like his music, TRBLE has an interesting take on wordplay. Sending a message of love & perseverance seems to be his main objective."
+  const text = `TRBLE – a visionary creator of the arts, blends his deep hip-hop roots with a sound that is both ethereal and powerful. With every note, he crafts a majestic experience that lingers long after the music fades. More than just an artist, TRBLE is a storyteller, using wordplay and melody to weave narratives of love, perseverance, and self-discovery.
+
+From a young age, TRBLE was drawn to the art of production, shaping his own sound and refining his skills behind the boards. His passion for music soon led him to explore other creative avenues within the trade, including photography, mixing, and software engineering. This multidimensional approach allows him to not only perfect his craft but also bring a unique perspective to every project he touches.
+
+The acronym behind his name—To Really Believe Love Exists—is not just an introduction but a philosophy that fuels his artistry. His lyrics reflect a unique perspective, drawing listeners into a world where vulnerability meets strength, and rhythm meets emotion. Whether through intricate bars, soul-stirring harmonies, or polished production, TRBLE's music is a testament to the power of belief, resilience, and the pursuit of something greater.
+
+From electrifying performances to introspective anthems, TRBLE continues to push the boundaries of sound and visual storytelling, inviting audiences to not just listen, but feel.`
   
   return (
     <>
       <Navbar />
+      <div>
       <motion.div 
-        className="flex relative flex-row justify-center mt-4 mb-4 snap-center -z-80 xl:-pt-20 xl:pb-20"
+        className="flex relative flex-row justify-center mt-8 snap-center sm:p-20 xl:-pt-20 xl:pb-20"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -26,6 +34,8 @@ export default function About() {
           </motion.div>
         </div>
       </motion.div>
+      </div>
+      <Footer />
     </>
   )
 }
