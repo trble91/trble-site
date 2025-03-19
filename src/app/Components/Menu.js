@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Menu({ links }) {
   return (
-    <div className="absolute top-16 right-0 w-full bg-stone-200 text-black sm:z-18 xl:z-10">
+    <div className="absolute top-16 right-0 w-full bg-stone-200 text-black sm:z-50 xl:z-50">
       {links.map((link) => (
         <Link
           key={link.href}
