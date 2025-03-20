@@ -27,7 +27,7 @@ export default function Tour() {
       </p>
       <Link href={featureLink.href}>
       <button 
-        className="mt-5 px-4 py-2 bg-slate-500 text-white font-semibold rounded-md hover:bg-slate-700 transition-all"      
+        className="text-center text-sm mb-8 mt-5 px-4 py-2 bg-slate-500 text-white font-semibold rounded-md hover:bg-slate-700 transition-all"      
       >
         Click Here to RSVP
       </button>
