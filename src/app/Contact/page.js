@@ -44,7 +44,7 @@ const ContactForm = () => {
       <div className="flex items-center flex-col top-5 justify-center min-h-screen snap-center">
         <p className="flex-col text-center max-w-[500px] text-red-800 font-thin">
           To inquire about any and all services. Fill out this contact form
-          expressing your photography needs.
+          expressing your needs.
         </p>
         <form
           onSubmit={handleSubmit}
@@ -100,7 +100,7 @@ const ContactForm = () => {
               id="message"
               required
               name="message"
-              placeholder="Please provide a brief description of the shoot. If you are under 21, a parent or guardian must submit the details on your behalf. Thank you, and I look forward to working with you!"
+              placeholder="Type Here"
               value={formData.message}
               onChange={handleChange}
               className="form-input mt-1 block w-full rounded-sm resize-none bg-white-900"
@@ -116,7 +116,6 @@ const ContactForm = () => {
           {status && <p className="mt-4 text-gray-700">{status}</p>}
         </form>
         <p className="flex-col text-center text-sm -mt-6 max-w-[300px] text-red-800 font-thin">
-       * A non-refundable deposit of 50% of the quoted price is required to secure the service.
         </p>
       </div>
     </>

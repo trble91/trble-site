@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function LatestRelease() {
   return (
-    <div className="flex relative flex-row justify-center mt-4 mb-4 snap-center -z-80 xl:-pt-20 xl:pb-20">
+    <div className="flex relative flex-row mb-10 justify-center mt-4 snap-center xl:-pt-20 xl:pb-20">
     <div className="bg-white-900 text-black p-6 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4">Latest Release</h2>
       <div className="flex items-center">
