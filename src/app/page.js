@@ -4,7 +4,6 @@
 import "../app/globals.css";
 import React from "react";
 import Homepage from "./Homepage/page.js";
-import Navbar from "./Components/Navbar.js";
 
 
 export default function Home() {

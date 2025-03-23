@@ -8,11 +8,13 @@ import Footer from "../Components/Footer";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="min-h-screen mt-10 flex-col items-center">  
       <SplashScreen />
       <Navbar />
       <LatestRelease />
+      <div className="flex mt-36 flex-col items-center">
       <Footer />
+      </div>
     </div>
   );
 }
