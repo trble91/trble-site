@@ -1,6 +1,9 @@
 "use client";
+"use strict";
 
 import React, { useState } from "react";
+import Navbar from "../Components/Navbar";
+// import Footer from "../Components/Footer";
 // import axios from "axios";
 
 const ContactForm = () => {
@@ -41,8 +44,9 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="flex items-center flex-col top-5 justify-center min-h-screen snap-center">
-        <p className="flex-col text-center max-w-[500px] text-red-800 font-thin">
+      <Navbar />
+      <div className="flex items-center flex-col justify-center min-h-screen snap-center">
+        <p className="flex-col text-center max-w-[500px] text-slate-700 font-thin">
           To inquire about any and all services. Fill out this contact form
           expressing your needs.
         </p>
@@ -50,7 +54,10 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           className="max-w-md w-full bg-white-900 p-6 rounded-lg shadow-md mt-5 mb-10"
         >
-          <label htmlFor="name" className="block text-stone-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="name"
+            className="block text-stone-700 text-sm font-bold mb-2"
+          >
             Name:
             <input
               id="name"
@@ -64,7 +71,10 @@ const ContactForm = () => {
               className="form-input mt-1 block w-full rounded-sm border-stone-700 bg-white-900"
             />
           </label>
-          <label htmlFor="email" className="block text-stone-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="email"
+            className="block text-stone-700 text-sm font-bold mb-2"
+          >
             Email:
             <input
               id="email"
@@ -78,14 +88,17 @@ const ContactForm = () => {
               className="form-input mt-1 block w-full rounded-sm border-gray-700 bg-white-900"
             />
           </label>
-          <label htmlFor="tel" className="block text-stone-700 text-sm font-bold mb-2">
+          <label
+            htmlFor="tel"
+            className="block text-stone-700 text-sm font-bold mb-2"
+          >
             Phone Number:
             <input
               id="tel"
               required
               type="tel"
               name="tel"
-              placeholder="7071235678"
+              placeholder="678-358-1467"
               value={formData.tel}
               onChange={handleChange}
               pattern="\d{10}"
@@ -93,8 +106,11 @@ const ContactForm = () => {
               className="form-input mt-1 block w-full rounded-sm border-gray-700 bg-white-900"
             />
           </label>
-          
-          <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">
+
+          <label
+            htmlFor="message"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
             Message:
             <textarea
               id="message"
@@ -109,15 +125,15 @@ const ContactForm = () => {
           </label>
           <button
             type="submit"
-            className="text-stone-700 item-center font-bold py-2 px-4 mt-4 rounded focus:outline-gray-300 focus:shadow-outline-gray-300 hover:bg-gray-300 hover:text-gray-900 active:bg-slate-300"
+            className="text-stone-700 item-center shadow-lg font-bold py-2 px-4 mt-4 rounded-xl focus:outline-gray-300 focus:shadow-outline-gray-300 hover:bg-gray-300 hover:text-gray-900 active:bg-slate-300"
           >
             Submit
           </button>
           {status && <p className="mt-4 text-gray-700">{status}</p>}
         </form>
-        <p className="flex-col text-center text-sm -mt-6 max-w-[300px] text-red-800 font-thin">
-        </p>
+        <p className="flex-col text-center text-sm -mt-6 max-w-[300px] text-slate-700 font-thin"></p>
       </div>
+      {/* <Footer /> */}
     </>
   );
 };

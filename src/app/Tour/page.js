@@ -19,9 +19,10 @@ export default function Tour() {
       </Head>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <p className="text-center text-sm text-slate-700 font-thin mt-7 -mb-8">
+        <p className="text-center items-center text-sm text-slate-700 font-thin">
           No Shows at This Time. <br />Click below to RSVP for future shows.
         </p>
+        <div className="flex flex-col items-center justify-center">
         <Link href={featureLink.href}>
         <button 
               className="flex flex-row shadow-lg   w-half uppercase text-center text-sm mb-2 mt-16 mr-6 px-4 py-2 bg-slate-500 text-white font-semibold rounded-md hover:bg-slate-700 transition-all"
@@ -31,6 +32,7 @@ export default function Tour() {
             </button>
       
         </Link>
+        </div>
         <div className="mt-auto">
           <Footer />
         </div>
