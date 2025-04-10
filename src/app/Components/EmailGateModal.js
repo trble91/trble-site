@@ -61,13 +61,13 @@ export default function EmailGateModal({ onSubmit }) {
         >
           Unlock Track
         </button>
-        <button
+        {/* <button
           onClick={handleSkip}
           className="mt-4 w-full text-sm text-gray-500 hover:text-white transition-all underline"
         >
           
           {`No thanks / I’ll wait`}
-        </button>
+        </button> */}
       </div>
     </div>
   );
