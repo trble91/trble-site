@@ -3,15 +3,15 @@
 
 import "../app/globals.css";
 import React from "react";
-import Homepage from "./Homepage/page.js";
+import Home from "./Home/page.js";
 
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <React.StrictMode>
         <main className="min-h-screen flex-col items-center">
-          <Homepage />
+          <Home />
         </main>
 
       </React.StrictMode>

@@ -6,7 +6,7 @@ import SplashScreen from "../Components/SplashScreen";
 import LatestRelease from "../Components/LatestRelease";
 import Footer from "../Components/Footer";
 
-export default function Homepage() {
+export default function Home() {
   return (
     <div className="min-h-screen mt-10 flex-col items-center">  
       <SplashScreen />
