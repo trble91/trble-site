@@ -8,11 +8,22 @@ export default function EmailGateModal({ onSubmit }) {
   const [email, setEmail] = useState('');
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (email && email.includes('@')) {
-      localStorage.setItem('emailCaptured', 'true');
-      onSubmit(email);
-      setIsVisible(false);
+      try {
+        await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, source: 'music-gate' }),
+        });
+  
+        localStorage.setItem('emailCaptured', 'true');
+        onSubmit(email);
+        setIsVisible(false);
+      } catch (err) {
+        console.error('Email submission failed:', err);
+        // Optional: Add error UI
+      }
     }
   };
 
