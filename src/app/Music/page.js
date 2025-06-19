@@ -14,10 +14,10 @@ import EmailGateModal from '../Components/EmailGateModal.js';
 export default function Music() {
   const [selectedPost, setSelectedPost] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleEmailSubmit = () => {
-    // Send to your database or email service here
-    console.log("Captured email:", email);
-  };
+  // const handleEmailSubmit = () => {
+  //   // Send to your database or email service here
+  //   console.log("Captured email:", email);
+  // };
   const AlbumCards = [
     {
       title: "The Lost Baker",
