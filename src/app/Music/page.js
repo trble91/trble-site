@@ -171,7 +171,7 @@ export default function Music() {
   return (
     <>
      <div>
-     <EmailGateModal onSubmit={handleEmailSubmit} />
+     {/* <EmailGateModal onSubmit={handleEmailSubmit} /> */}
       <Navbar />
       <div className="flex sticky flex-row justify-center z-0 mt-4 mb-4 snap-center xl:-pt-20 xl:pb-20">
         <script
