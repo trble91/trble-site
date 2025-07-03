@@ -14,10 +14,10 @@ import EmailGateModal from '../Components/EmailGateModal.js';
 export default function Music() {
   const [selectedPost, setSelectedPost] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const handleEmailSubmit = () => {
-    // Send to your database or email service here
-    console.log("Captured email:", email);
-  };
+  // const handleEmailSubmit = () => {
+  //   // Send to your database or email service here
+  //   console.log("Captured email:", email);
+  // };
   const AlbumCards = [
     {
       title: "The Lost Baker",
@@ -171,7 +171,7 @@ export default function Music() {
   return (
     <>
      <div>
-     <EmailGateModal onSubmit={handleEmailSubmit} />
+     {/* <EmailGateModal onSubmit={handleEmailSubmit} /> */}
       <Navbar />
       <div className="flex sticky flex-row justify-center z-0 mt-4 mb-4 snap-center xl:-pt-20 xl:pb-20">
         <script

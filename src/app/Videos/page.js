@@ -39,16 +39,16 @@ export default function Video() {
               style={{ scale }}
               width="80%"
               height="300"
-              src="https://www.youtube.com/embed/tgVnDj8vx3g?si=oCBb0MwBp7B9X0rd"
+              src="https://www.youtube.com/embed/OJsHNAcu8vs?si=x_Grh38pT1Maqnq2" 
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            />
+              />
             <motion.iframe
               style={{ scale }}
               width="80%"
               height="300"
-              src="https://www.youtube.com/embed/RWwn8TS7g1o?si=D8xgFZw9thnvJFyb"
+              src="https://www.youtube.com/embed/tgVnDj8vx3g?si=oCBb0MwBp7B9X0rd"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
