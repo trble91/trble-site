@@ -19,7 +19,7 @@ export default function LatestRelease() {
       style={{ scale }}
       width="500"
       height="400"
-      src="https://www.youtube.com/embed/OJsHNAcu8vs?si=x_Grh38pT1Maqnq2" 
+      src="https://www.youtube.com/embed/ishDCF1ojyA?si=uJ-0iTIUfDdrXIRC"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
