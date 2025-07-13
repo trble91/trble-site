@@ -29,7 +29,7 @@ export default function LatestRelease() {
     />
         </div>
         <div className="flex flex-col items-center justify-center">
-        <Link href="https://unitedmasters.com/m/thank-you-66">
+        <Link href="https://untd.io/r/AnJHHkuD8AVq">
         <button 
               className="flex flex-row shadow-lg w-half uppercase text-center text-sm mb-2 mt-16 mr-6 px-4 py-2 bg-gray-200 text-slate-700 font-semibold rounded-md hover:bg-gray-600 transition-all"
               aria-label="music links"
